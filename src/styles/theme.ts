@@ -29,6 +29,9 @@ export default {
     fourth: '#06092B',
     fifth: '#F2F2F2',
     white: '#FFFFFF',
+    primaryHover: '#016b5b',
+    buttonBackgroundColor: '#FFFFFF',
+    buttonColor: '#00a78e',
   },
   spacings: {
     xxsmall: '0.8rem',

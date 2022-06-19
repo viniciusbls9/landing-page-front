@@ -2,16 +2,18 @@ import styled, { css } from 'styled-components';
 
 export const BannerWrapper = styled.div`
   ${({ theme }) => css`
-    display: grid;
-    grid-template-columns: 1fr;
+    background-color: ${theme.colors.primary};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: ${theme.spacings.large};
   `}
 `;
 
-export const LeftBannerWrapper = styled.div`
+export const BannerContent = styled.div`
   ${({ theme }) => css`
-    background-color: ${theme.colors.primary};
-    padding: ${theme.spacings.medium} 0 ${theme.spacings.medium}
-      ${theme.spacings.small};
+    /* padding: ${theme.spacings.medium} 0 ${theme.spacings.medium}
+      ${theme.spacings.small}; */
   `}
 `;
 
@@ -27,5 +29,3 @@ export const BannerDescription = styled.p`
     margin: ${theme.spacings.xsmall} 0;
   `}
 `;
-
-export const RightBannerWrapper = styled.div``;

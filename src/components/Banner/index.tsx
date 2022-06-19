@@ -1,5 +1,15 @@
+import * as S from './styles';
+
 const Banner = () => {
-  return <h1>banner</h1>;
+  return (
+    <S.BannerWrapper>
+      <S.LeftBannerWrapper>
+        <S.BannerTitle>Title</S.BannerTitle>
+        <S.BannerDescription>Description</S.BannerDescription>
+      </S.LeftBannerWrapper>
+      <S.RightBannerWrapper></S.RightBannerWrapper>
+    </S.BannerWrapper>
+  );
 };
 
 export default Banner;

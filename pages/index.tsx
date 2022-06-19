@@ -1,11 +1,18 @@
-import { Container, Menu } from 'components';
 import type { NextPage } from 'next';
+import { Container, Menu, Banner } from 'components';
+
+import * as S from './styles';
 
 const Index: NextPage = () => {
   return (
-    <Container>
-      <Menu />
-    </Container>
+    <S.HomeWrapper>
+      <Container>
+        <Menu />
+      </Container>
+      <S.BannerWrapper>
+        <Banner />
+      </S.BannerWrapper>
+    </S.HomeWrapper>
   );
 };
 

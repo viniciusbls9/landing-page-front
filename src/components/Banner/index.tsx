@@ -1,3 +1,4 @@
+import { Button } from 'components';
 import * as S from './styles';
 
 const Banner = () => {
@@ -6,6 +7,7 @@ const Banner = () => {
       <S.LeftBannerWrapper>
         <S.BannerTitle>Title</S.BannerTitle>
         <S.BannerDescription>Description</S.BannerDescription>
+        <Button href='/'>Btn Label</Button>
       </S.LeftBannerWrapper>
       <S.RightBannerWrapper></S.RightBannerWrapper>
     </S.BannerWrapper>

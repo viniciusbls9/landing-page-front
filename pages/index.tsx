@@ -1,7 +1,8 @@
+import { Home } from 'templates';
 import type { NextPage } from 'next';
 
-const Home: NextPage = () => {
-  return <h1>teste</h1>;
+const Index: NextPage = () => {
+  return <Home />;
 };
 
-export default Home;
+export default Index;

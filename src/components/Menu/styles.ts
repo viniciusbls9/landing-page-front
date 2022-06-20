@@ -6,7 +6,7 @@ export const MenuWrapper = styled.menu`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: ${theme.spacings.small} 10px;
+    padding: ${theme.spacings.small} ${theme.spacings.xxlarge};
   `}
 `;
 

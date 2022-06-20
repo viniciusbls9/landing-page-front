@@ -6,9 +6,7 @@ import * as S from './styles';
 const Index: NextPage = () => {
   return (
     <S.HomeWrapper>
-      <Container>
-        <Menu />
-      </Container>
+      <Menu />
       <S.BannerWrapper>
         <Banner />
       </S.BannerWrapper>

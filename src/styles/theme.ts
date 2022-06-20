@@ -32,6 +32,8 @@ export default {
     primaryHover: '#016b5b',
     buttonBackgroundColor: '#FFFFFF',
     buttonColor: '#00a78e',
+    bannerTitleColor: '#FFFFFF',
+    bannerDescriptionColor: '#FFFFFF'
   },
   spacings: {
     xxsmall: '0.8rem',

@@ -7,9 +7,17 @@ export const BannerWrapper = styled.div`
     grid-template-columns: 1fr;
     height: auto;
 
-    ${media.greaterThan('medium')`
+    @media (min-width: 1024px) and (max-width: 1500px) {
+      grid-template-columns: 60rem 1fr;
+    }
+
+    @media (min-width: 1501px) {
       grid-template-columns: 75rem 1fr;
-    `}
+    }
+
+    @media (min-width: 1981px) {
+      grid-template-columns: 110rem 1fr;
+    }
   `}
 `;
 
@@ -20,11 +28,13 @@ export const LeftBannerWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+    
     padding: ${theme.spacings.medium};
     
     ${media.greaterThan('medium')`
       padding: ${theme.spacings.xxlarge};
+      align-items: unset;
     `}
   `}
 `;
@@ -57,7 +67,25 @@ export const BannerDescription = styled.p`
 
 export const RightBannerWrapper = styled.div`
   display: none;
-  /* background: url(https://img.freepik.com/fotos-gratis/foto-isolada-de-mulher-usando-aplicativo-de-smartphone-gosta-de-navegar-na-midia-social-cria-conteudo-de-noticias-faz-pedidos-online-usa-oculos-e-poses-casuais-de-macacao-sobre-a-parede-bege-do-estudio_273609-44111.jpg?w=1060&t=st=1655659745~exp=1655660345~hmac=d0d3bef33cfe245674cb366c6380d58ccbac249c52aed1ba1460588ba4cdfe86);
-  background-size: contain;
-  background-repeat: no-repeat; */
+  width: 100%;
+  justify-content: center;
+
+  @media (min-width: 1024px) {
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+  }
 `;
+
+export const BannerImage = styled.img`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-height: 64vh;
+  margin: 0 auto;
+  align-self: flex-start;
+  justify-content: flex-start;
+
+`

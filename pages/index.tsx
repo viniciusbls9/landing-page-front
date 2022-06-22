@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Container, Menu, Banner } from 'components';
+import { Menu, Banner, About } from 'components';
 
 import * as S from './styles';
 
@@ -10,6 +10,7 @@ const Index: NextPage = () => {
       <S.BannerWrapper>
         <Banner />
       </S.BannerWrapper>
+      <About />
     </S.HomeWrapper>
   );
 };

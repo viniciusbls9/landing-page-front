@@ -14,7 +14,7 @@ const wrapperModifiers = {
 }
 
 export const Wrapper = styled.h2<Props>`
-  ${({ theme, reverseColor, lineBottom }) => css`
+  ${({ theme, reverseColor }) => css`
     padding-left: 1rem;
     font-size: ${theme.font.sizes.large};
     ${media.greaterThan('medium')`

@@ -2,23 +2,21 @@ import styled, { css } from 'styled-components';
 import media from 'styled-media-query';
 
 export const BannerWrapper = styled.div`
-  ${({ theme }) => css`
-    display: grid;
-    grid-template-columns: 1fr;
-    height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: auto;
 
-    @media (min-width: 1024px) and (max-width: 1500px) {
-      grid-template-columns: 60rem 1fr;
-    }
+  @media (min-width: 1024px) and (max-width: 1500px) {
+    grid-template-columns: 58rem 1fr;
+  }
 
-    @media (min-width: 1501px) {
-      grid-template-columns: 75rem 1fr;
-    }
+  @media (min-width: 1501px) {
+    grid-template-columns: 75rem 1fr;
+  }
 
-    @media (min-width: 1981px) {
-      grid-template-columns: 110rem 1fr;
-    }
-  `}
+  @media (min-width: 1981px) {
+    grid-template-columns: 110rem 1fr;
+  }
 `;
 
 export const LeftBannerWrapper = styled.div`
@@ -35,18 +33,6 @@ export const LeftBannerWrapper = styled.div`
     ${media.greaterThan('medium')`
       padding: ${theme.spacings.xxlarge};
       align-items: unset;
-    `}
-  `}
-`;
-
-export const BannerTitle = styled.h1`
-  ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xxlarge};
-    color: ${theme.colors.bannerTitleColor};
-    text-align: center;
-    
-    ${media.greaterThan('medium')`
-      text-align: left;
     `}
   `}
 `;
@@ -74,7 +60,6 @@ export const RightBannerWrapper = styled.div`
     display: block;
     background-size: contain;
     background-repeat: no-repeat;
-    
   }
 `;
 
@@ -83,7 +68,7 @@ export const BannerImage = styled.img`
   align-items: center;
   width: 100%;
   height: 100%;
-  max-height: 64vh;
+  max-height: 68vh;
   margin: 0 auto;
   align-self: flex-start;
   justify-content: flex-start;

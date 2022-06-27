@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { SectionHero, SectionAboutProject } from 'components';
+import { SectionHero, SectionAbout } from 'components';
 
 const Index: NextPage = () => {
   return (
@@ -19,7 +19,7 @@ const Index: NextPage = () => {
           }
         }}
       />
-      <SectionAboutProject
+      <SectionAbout
         image={{
           url: 'https://img.freepik.com/free-photo/team-business-people-stacking-hands_53876-119699.jpg?t=st=1656066574~exp=1656067174~hmac=c37cc7a1c8fe5b6de83ea6c506f3e15dbe343850e98d0b12cc69300c2628a48d&w=1380',
           alternativeText: 'image'

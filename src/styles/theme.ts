@@ -29,6 +29,8 @@ export default {
     fourth: '#06092B',
     fifth: '#F2F2F2',
     white: '#FFFFFF',
+    black: '#293651',
+    text: '#646F87',
     buttonBackgroundHover: '#016b5b',
     buttonHoverColor: '#FFFFFF',
     buttonBackgroundColor: '#FFFFFF',

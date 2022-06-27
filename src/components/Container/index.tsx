@@ -1,13 +1,14 @@
-import styled, { css } from 'styled-components';
+import React from 'react'
 
-export const Container = styled.div`
-  ${({ theme }) => css`
-    width: 100%;
-    max-width: ${theme.grid.container};
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: calc(${theme.grid.gutter} / 2);
-    padding-right: calc(${theme.grid.gutter} / 2);
-  `}
-`;
-export default Container;
+import * as S from './styles'
+
+type Props = {
+  id?: string
+  children: React.ReactNode
+}
+
+const Container: React.FC<Props> = ({ children, id }) => (
+  <S.Container id={id}>{children}</S.Container>
+)
+
+export default Container

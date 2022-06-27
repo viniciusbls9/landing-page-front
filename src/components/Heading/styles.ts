@@ -5,7 +5,7 @@ import { Props } from '.'
 
 const wrapperModifiers = {
   defaultColor: (theme: DefaultTheme) => css`
-    color: ${theme.colors.white};
+    color: ${theme.colors.black};
   `,
 
   reverseColor: (theme: DefaultTheme) => css`
@@ -15,11 +15,12 @@ const wrapperModifiers = {
 
 export const Wrapper = styled.h2<Props>`
   ${({ theme, reverseColor }) => css`
-    padding-left: 1rem;
-    font-size: ${theme.font.sizes.large};
+    font-size: ${theme.font.sizes.medium};
+
     ${media.greaterThan('medium')`
-      font-size: ${theme.font.sizes.xxlarge};
+      font-size: ${theme.font.sizes.large};
     `}
+
     ${!reverseColor && wrapperModifiers.defaultColor(theme)};
     ${reverseColor && wrapperModifiers.reverseColor(theme)};
   `}

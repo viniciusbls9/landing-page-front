@@ -4,14 +4,14 @@ import Heading from 'components/Heading'
 import Container from 'components/Container'
 
 import * as S from './styles'
-import { SectionAboutProjectProps } from 'types/api'
+import { SectionAboutProps } from 'types/api'
 import { getImageUrl } from 'utils/getImageUrl'
 
-const SectionAboutProject = ({
+const SectionAbout = ({
   title,
   description,
   image
-}: SectionAboutProjectProps) => (
+}: SectionAboutProps) => (
   <S.Wrapper>
     <Container>
       <S.Container>
@@ -29,4 +29,4 @@ const SectionAboutProject = ({
   </S.Wrapper>
 )
 
-export default SectionAboutProject
+export default SectionAbout

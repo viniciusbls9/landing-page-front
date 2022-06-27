@@ -1,7 +1,6 @@
 import React from 'react'
 
-import Heading from 'components/Heading'
-import Container from 'components/Container'
+import { Heading, Container, Button } from 'components'
 
 import * as S from './styles'
 import { SectionAboutProps } from 'types/api'
@@ -10,7 +9,8 @@ import { getImageUrl } from 'utils/getImageUrl'
 const SectionAbout = ({
   title,
   description,
-  image
+  image,
+  button
 }: SectionAboutProps) => (
   <S.Wrapper>
     <Container>
@@ -21,8 +21,9 @@ const SectionAbout = ({
           loading="lazy"
         />
         <div>
-          <Heading>{title}</Heading>
+          <Heading as="h2">{title}</Heading>
           <S.Text dangerouslySetInnerHTML={{ __html: description }} />
+          <Button reverseColor href={button.href}>{button.label}</Button>
         </div>
       </S.Container>
     </Container>

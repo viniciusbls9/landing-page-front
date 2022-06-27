@@ -1,9 +1,17 @@
-import styled, { css } from 'styled-components';
+import styled, { css, DefaultTheme } from 'styled-components';
 
-type ButtonProps = { maxWidth?: string }
+type ButtonProps = { maxWidth?: string; reverseColor?: boolean }
+
+const wrapperModifiers = {
+
+  reverseColor: (theme: DefaultTheme) => css`
+    background: ${theme.colors.primary};
+    color: ${theme.colors.white};
+  `
+}
 
 export const ButtonWrapper = styled.a<ButtonProps>`
-  ${({ theme, maxWidth }) => css`
+  ${({ theme, maxWidth, reverseColor }) => css`
     background: ${theme.colors.buttonBackgroundColor};
     border-radius: ${theme.border.radius};
     color: ${theme.colors.buttonColor};
@@ -18,5 +26,7 @@ export const ButtonWrapper = styled.a<ButtonProps>`
       background: ${theme.colors.buttonBackgroundHover};
       color: ${theme.colors.buttonHoverColor};
     }
+
+    ${reverseColor && wrapperModifiers.reverseColor(theme)};
   `}
 `;

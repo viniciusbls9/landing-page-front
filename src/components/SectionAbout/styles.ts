@@ -41,7 +41,7 @@ export const Image = styled.img`
 
 export const Text = styled.div`
   ${({ theme }) => css`
-    margin-top: ${theme.spacings.medium};
+    margin-top: ${theme.spacings.small};
 
     p {
       color: ${theme.colors.black};

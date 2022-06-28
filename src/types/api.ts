@@ -26,6 +26,10 @@ export type SectionAboutProps = {
   title: string
   description: string
   image: Image
+  button: {
+    href: string
+    label: string
+  }
 }
 
 export type SectionTechProps = {
@@ -33,22 +37,27 @@ export type SectionTechProps = {
   techIcons: TechIcon[]
 }
 
-export type SectionConceptsProps = {
+export type SectionCTAProps = {
   title: string
-  concepts: Array<{
-    title: string
-  }>
+  description: string
+  button: {
+    href: string
+    label: string
+  }
 }
 
-export type Modules = {
-  title: string
-  subtitle: string
-  description: string
+export type Services = {
+  icon: {
+    src: string
+    alternativeText: string
+    width: string
+    height: string;
+  }
+  children: string
 }
 
 export type SectionServicesProps = {
-  title: string
-  modules: Modules[]
+  services: Services[]
 }
 
 export type SectionAgendaProps = {
@@ -88,9 +97,6 @@ export type SectionAboutUsProps = {
 export type Review = {
   name: string
   text: string
-  photo: {
-    url: string
-  }
 }
 
 export type SectionReviewsProps = {
@@ -113,7 +119,7 @@ export type LandingPageProps = {
   header: HeaderProps
   SectionAboutProps: SectionAboutProps
   sectionTech: SectionTechProps
-  sectionConcepts: SectionConceptsProps
+  sectionConcepts: SectionCTAProps
   sectionModules: SectionServicesProps
   sectionAgenda: SectionAgendaProps
   pricingBox: PricingBoxProps

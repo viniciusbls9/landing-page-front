@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { SectionHero, SectionAbout, SectionServices, SectionReviews } from 'components';
+import { SectionHero, SectionAbout, SectionServices, SectionReviews, SectionCTA } from 'components';
 
 const Index: NextPage = () => {
   const servicesMock = [
@@ -66,6 +66,12 @@ const Index: NextPage = () => {
         description='<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to</p>'
       />
       <SectionServices services={servicesMock} />
+
+      <SectionCTA
+        title="Solicite um orçamento agora mesmo"
+        description='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,'
+        button={{ label: 'Entre em contato', href: '#' }}
+      />
 
       <SectionReviews title='Depoimentos' reviews={reviewsMock} />
     </>

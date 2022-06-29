@@ -37,16 +37,14 @@ const SectionReviews = ({ title, reviews }: SectionReviewsProps) => (
         <Heading as="h2">{title}</Heading>
       </S.SectionReviewsContainer>
       <S.Content>
-        <Slider {...settings}>
-          {reviews.map(({ name, text }, index) => (
-            <ReviewCard
-              key={index}
-              name={name}
-              description={text}
-              id={index}
-            />
-            ))}
-        </Slider>
+        {reviews.map(({ name, text }, index) => (
+          <ReviewCard
+            key={index}
+            name={name}
+            description={text}
+            id={index}
+          />
+        ))}
       </S.Content>
 
     </Container>
